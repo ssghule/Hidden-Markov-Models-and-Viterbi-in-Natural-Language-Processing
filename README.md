@@ -11,10 +11,11 @@ ADV (adverb), ADP (adposition), CONJ (conjunction), DET (determiner), NOUN, NUM 
 (pronoun), PRT (particle), VERB, X (foreign word), and . (punctuation mark). Sentence boundaries are
 indicated by blank lines. </br></br>
 
-label.py is the main program, pos scorer.py, which has the scoring code, and pos solver.py, which will contain the actual
+label.py is the main program, pos scorer.py, which has the scoring code, and pos solver.py, which contains the actual
 part-of-speech estimation code. The program takes as input two filenames: a training file and a testing file and displays accuracy using simple probability, Bayes net variable elimination method and Viterbi algorithm to find the maximum a posteriori (MAP). </br> </br>
 It also displays the logarithm of the posterior probability for each solution it finds, as well as a
 running evaluation showing the percentage of words and whole sentences that have been labeled correctly
 according to the ground truth. </br></br>
+To run the code:</br>
 __python label.py part2 training_file testing_file__
 
